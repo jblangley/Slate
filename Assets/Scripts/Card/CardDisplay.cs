@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+using System;
+
 public class CardDisplay : MonoBehaviour {
 
     public Card card;
@@ -16,6 +18,7 @@ public class CardDisplay : MonoBehaviour {
 
     public TextMeshProUGUI range;
     public TextMeshProUGUI damage;
+
 
 	// Use this for initialization
 	void OnEnable () {
@@ -34,4 +37,6 @@ public class CardDisplay : MonoBehaviour {
         card = _card;
         OnEnable();
     }
+
+   
 }

@@ -2,12 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Deck : MonoBehaviour {
+public class Deck : MonoBehaviour
+{
 
     public List<Card> deck;
     public List<Card> hand;
+    public List<Card> discard;
 
     public CardDisplay prefabCard;
+
+    public void AddCard(Card card)
+    {
+        deck.Add(card);
+    }
 
     public void AddCards(List<Card> cardsAdding)
     {
@@ -33,13 +40,19 @@ public class Deck : MonoBehaviour {
         hand.Add(deck[0]);
         deck.RemoveAt(0);
         Shuffle();
-    } 
+    }
 
-    //public void ShowHand()
-    //{
-    //    for (int index = 0; index < hand.Count; index++)
-    //    {
-            
-    //    }
-    //}
+    public void HandToDisacrd(int num)
+    {
+        discard.Add(hand[num]);
+        hand.RemoveAt(num);
+    }
+
+    public void RefillDeck()
+    {
+        deck.AddRange(discard);
+        discard = null;
+    }
 }
+
+

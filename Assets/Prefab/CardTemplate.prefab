@@ -123,6 +123,8 @@ GameObject:
   - component: {fileID: 224219565812503096}
   - component: {fileID: 222487732507033500}
   - component: {fileID: 114369456140350162}
+  - component: {fileID: 114675033684098540}
+  - component: {fileID: 225494861546827502}
   m_Layer: 5
   m_Name: CardTemplate
   m_TagString: Untagged
@@ -149,7 +151,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 1
+  m_text: 7
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -176,8 +178,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -225,12 +227,12 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
-  m_inputSource: 0
+  m_isInputParsingRequired: 1
+  m_inputSource: 3
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
@@ -262,7 +264,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6b7a3afefac2bf64ba2e5d31930ef774, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c0bbdd9c395de0847936a80f5ab1f596, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -289,7 +291,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a751b0aa563fe2344b0cdd637d18a42d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6e97437b7f6c30e49a0c263ebfd7204a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -308,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43bb76f3469694641b6eb25eafe3404f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card: {fileID: 11400000, guid: 26255d8632e36c844a3b3583abd20b65, type: 2}
+  card: {fileID: 11400000, guid: 97fadac54cfc46545858d921a63098b2, type: 2}
   nameText: {fileID: 114613754869179078}
   descriptionText: {fileID: 114777540834204028}
   fgArt: {fileID: 114134261499827590}
@@ -334,7 +336,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Sword Swipe
+  m_text: Fireball
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff2da88282303494e905e4b84fa4652a, type: 2}
   m_sharedMaterial: {fileID: 21639581578890144, guid: ff2da88282303494e905e4b84fa4652a,
@@ -362,8 +364,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -400,7 +402,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -0.000030517578, w: 0}
+  m_margin: {x: 0, y: 0, z: -0.000045776367, w: 0}
   m_textInfo:
     textComponent: {fileID: 0}
     characterCount: 11
@@ -411,12 +413,12 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
-  m_inputSource: 0
+  m_isInputParsingRequired: 1
+  m_inputSource: 3
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
@@ -448,9 +450,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: '2
-
-'
+  m_text: 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -477,8 +477,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -518,20 +518,20 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -0.000030517578, w: 0}
   m_textInfo:
     textComponent: {fileID: 0}
-    characterCount: 2
+    characterCount: 1
     spriteCount: 0
-    spaceCount: 1
+    spaceCount: 0
     wordCount: 1
     linkCount: 0
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
-  m_inputSource: 0
+  m_isInputParsingRequired: 1
+  m_inputSource: 3
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
@@ -544,6 +544,18 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &114675033684098540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1919937364161648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde95942785e52b4faa16a8ff7488565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentToReturnTo: {fileID: 0}
 --- !u!114 &114777540834204028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -563,7 +575,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Sword Swipe
+  m_text: Taste Like Cinnomon Death
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff2da88282303494e905e4b84fa4652a, type: 2}
   m_sharedMaterial: {fileID: 21639581578890144, guid: ff2da88282303494e905e4b84fa4652a,
@@ -591,8 +603,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -640,12 +652,12 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
-  m_inputSource: 0
+  m_isInputParsingRequired: 1
+  m_inputSource: 3
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
@@ -722,8 +734,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.26, y: -0.47}
-  m_SizeDelta: {x: 132.42, y: 174.4}
+  m_AnchoredPosition: {x: 0.00059414, y: -0.0015039}
+  m_SizeDelta: {x: 93.676, y: 120.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224219565812503096
 RectTransform:
@@ -745,8 +757,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -171.16, y: -167}
-  m_SizeDelta: {x: 152.16, y: 195.2}
+  m_AnchoredPosition: {x: -133.76, y: -92.52}
+  m_SizeDelta: {x: 93.67, y: 120.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224413160533031420
 RectTransform:
@@ -763,8 +775,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -49.9, y: -79.2}
-  m_SizeDelta: {x: 24.63, y: 26.497}
+  m_AnchoredPosition: {x: -30.645004, y: -49.015}
+  m_SizeDelta: {x: 24.63, y: 15.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224427282451568848
 RectTransform:
@@ -781,8 +793,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.3, y: 85.2}
-  m_SizeDelta: {x: 101.52, y: 19.44}
+  m_AnchoredPosition: {x: 1.21, y: 53.484}
+  m_SizeDelta: {x: 83.23, y: 13.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224476704534236066
 RectTransform:
@@ -799,8 +811,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 54.5, y: -79.198}
-  m_SizeDelta: {x: 29.61, y: 26.5}
+  m_AnchoredPosition: {x: 28.020004, y: -49.68}
+  m_SizeDelta: {x: 29.61, y: 14.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224715898860855846
 RectTransform:
@@ -818,8 +830,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.23499, y: 0.000012159}
-  m_SizeDelta: {x: 151.69, y: 195.2}
+  m_AnchoredPosition: {x: -0.00037575, y: -0.00063705}
+  m_SizeDelta: {x: 93.675, y: 120.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224808940987875972
 RectTransform:
@@ -836,6 +848,17 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.7, y: -51.5}
-  m_SizeDelta: {x: 101.52, y: 19.44}
+  m_AnchoredPosition: {x: -1.6325, y: -31.4}
+  m_SizeDelta: {x: 82.655, y: 19.44}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &225494861546827502
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1919937364161648}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
