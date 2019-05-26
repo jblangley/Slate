@@ -9,8 +9,6 @@ public class Deck : MonoBehaviour
     public List<Card> hand;
     public List<Card> discard;
 
-    public CardDisplay prefabCard;
-
     public void AddCard(Card card)
     {
         deck.Add(card);
@@ -21,7 +19,7 @@ public class Deck : MonoBehaviour
         deck.AddRange(cardsAdding);
     }
 
-    public void Shuffle()
+    void Shuffle()
     {
         int count = deck.Count;
         for (int index = 0; index < count; index++)
@@ -33,13 +31,16 @@ public class Deck : MonoBehaviour
         }
     }
 
-    public void DrawCard()
+    public Card DrawCard()
     {
-        prefabCard.ChangeCard(deck[0]);
-        Instantiate(prefabCard, transform);
         hand.Add(deck[0]);
         deck.RemoveAt(0);
+        if (deck.Count == 0)
+        {
+            RefillDeck();
+        }
         Shuffle();
+        return hand[hand.Count - 1];
     }
 
     public void HandToDisacrd(int num)

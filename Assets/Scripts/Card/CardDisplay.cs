@@ -19,24 +19,25 @@ public class CardDisplay : MonoBehaviour {
     public TextMeshProUGUI range;
     public TextMeshProUGUI damage;
 
-
-	// Use this for initialization
-	void OnEnable () {
+    public void OnEnable () {
+        SetCard();
+	}
+	
+    public void SetCard()
+    {
         nameText.text = card.cardName;
         descriptionText.text = card.description;
 
         fgArt.sprite = card.fgArtwork;
         bgArt.sprite = card.bgArtwork;
 
-        range.text = card.range.ToString(); 
+        range.text = card.range.ToString();
         damage.text = card.damage.ToString();
-	}
-	
+    }
+
 	public void ChangeCard(Card _card)
     {
         card = _card;
-        OnEnable();
+        SetCard();
     }
-
-   
 }

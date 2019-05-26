@@ -3,14 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CardHandler : MonoBehaviour {
-    //Use for Slates and stuff
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    public GameObject CardUI;
+    public CardDisplay display;
+    public Deck deck;
+
+    void Start()
+    {
+        deck = GetComponent<Deck>();
+
+    }
+
+    public void CreateCard()
+    {
+        display.ChangeCard(deck.DrawCard());
+        Instantiate(display, transform);
+    }
+
+    public void DeleteCard()
+    {
+        deck.HandToDisacrd(0);
+        Destroy(display);
+    }
 }

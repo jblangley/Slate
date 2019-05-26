@@ -151,7 +151,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 7
+  m_text: 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -264,7 +264,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c0bbdd9c395de0847936a80f5ab1f596, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b7a3afefac2bf64ba2e5d31930ef774, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -291,7 +291,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6e97437b7f6c30e49a0c263ebfd7204a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a751b0aa563fe2344b0cdd637d18a42d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43bb76f3469694641b6eb25eafe3404f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card: {fileID: 11400000, guid: 97fadac54cfc46545858d921a63098b2, type: 2}
+  card: {fileID: 11400000, guid: 26255d8632e36c844a3b3583abd20b65, type: 2}
   nameText: {fileID: 114613754869179078}
   descriptionText: {fileID: 114777540834204028}
   fgArt: {fileID: 114134261499827590}
@@ -336,7 +336,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Fireball
+  m_text: Sword Swipe
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff2da88282303494e905e4b84fa4652a, type: 2}
   m_sharedMaterial: {fileID: 21639581578890144, guid: ff2da88282303494e905e4b84fa4652a,
@@ -556,6 +556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentToReturnTo: {fileID: 0}
+  offset: {x: 50, y: -50}
 --- !u!114 &114777540834204028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -575,7 +576,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Taste Like Cinnomon Death
+  m_text: Basic Swipe
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff2da88282303494e905e4b84fa4652a, type: 2}
   m_sharedMaterial: {fileID: 21639581578890144, guid: ff2da88282303494e905e4b84fa4652a,
