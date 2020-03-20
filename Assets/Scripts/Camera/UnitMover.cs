@@ -1,22 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements;
+using UnityEngine.EventSystems;
 
 public class UnitMover : MonoBehaviour
 {
     public Camera cam;
     public int MBLeft = 0;
     public int MBRight = 1;
-    PlayerController gO;
-    public GameObject[] allUnits;
     public float speed = 5;
-    Spawner spawner;
+    GameManager manager;
 
     void Start()
     {
         cam = GetComponent<Camera>();
-        allUnits = GameObject.FindGameObjectsWithTag("Unit");
-        
+        if (manager == null)
+        {
+            manager = FindObjectOfType<GameManager>();
+        }
     }
 
     void Update()
@@ -31,26 +33,22 @@ public class UnitMover : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(MBLeft))
         {
+
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit))
             {
-                //if it hits something with an agent set agent to it
                 if (hit.collider.gameObject.tag == "Unit")
                 {
-                    gO = hit.collider.gameObject.GetComponent<PlayerController>();
+                    manager.SelectUnit(hit.collider.gameObject.GetComponent<Deck>());
                 }
-                if (hit.collider.gameObject.tag == "Spawner")
+                else if (hit.collider.gameObject.tag == "Spawner")
                 {
-                    //gO = hit.collider.gameObject.GetComponent<PlayerController>();
-                    //spawn one unit
-                    spawner = hit.collider.gameObject.GetComponent<Spawner>();
-                    spawner.SetSpawn(true);
+                    //UnitSelectMenu.Menu.EnableMenu(hit.collider.gameObject.GetComponent<Spawner>());
+                    manager.SelectSpawner(hit.collider.gameObject.GetComponent<Spawner>());
                 }
-                Debug.Log("Click");
             }
-
         }
     }
 
@@ -64,14 +62,13 @@ public class UnitMover : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 100f))
             {
-
                 if (hit.collider.gameObject.tag == "Unit")
                 {
-                    gO.SetTargetPath(hit.collider.gameObject);
+                    manager.SelectTarget(hit.collider.gameObject);
                 }
                 else
                 {
-                    gO.SetTargetPath(hit.point);
+                    manager.SelectPoint(hit.point);
                 }
             }
         }
@@ -81,36 +78,24 @@ public class UnitMover : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            allUnits = GameObject.FindGameObjectsWithTag("Unit");
-
-            foreach (GameObject unit in allUnits)
-            {
-                if (unit != null)
-                {
-                    DecideNextAction temp = unit.GetComponent<DecideNextAction>();
-                    temp.NextAction();
-                }
-            }
-
-            if (spawner != null)
-            {
-                spawner.SpawnUnit();
-            }
+            manager.NextAction();
+            manager.CheckWin();
             //Maybe learn events and have the actions happen all at once
         }
     }
 
-    
-
     void MoveCamera()
     {
-        if (Input.GetAxis("Horizontal") != 0)
-        {
-            cam.transform.localPosition += new Vector3(0, 0, speed * Input.GetAxis("Horizontal")) * Time.deltaTime;
-        }
+        Vector3 camMove = new Vector3();
+        float temp = 1f;
         if (Input.GetAxis("Vertical") != 0)
         {
-            cam.transform.localPosition += -(new Vector3(speed * Input.GetAxis("Vertical"), 0, 0) * Time.deltaTime);
+            camMove += new Vector3(0, 0, Input.GetAxis("Vertical")) * Time.deltaTime;
         }
+        if (Input.GetAxis("Horizontal") != 0)
+        {
+            camMove += -(new Vector3(Input.GetAxis("Horizontal"), 0, 0) * Time.deltaTime);
+        }
+        cam.transform.position += (Vector3.ClampMagnitude(camMove, temp)) * speed;
     }
 }

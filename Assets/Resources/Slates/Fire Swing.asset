@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7afeeff988baac4c863c471fe1991db, type: 3}
+  m_Name: Fire Swing
+  m_EditorClassIdentifier: 
+  result: {fileID: 11400000, guid: 9c558253d806b1e4d9689eda10e73bbb, type: 2}
+  recipe:
+  - {fileID: 11400000, guid: 97fadac54cfc46545858d921a63098b2, type: 2}
+  - {fileID: 11400000, guid: 97fadac54cfc46545858d921a63098b2, type: 2}
+  - {fileID: 11400000, guid: b416c738fdd209a40b4301daaa8b51e7, type: 2}

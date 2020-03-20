@@ -18,5 +18,25 @@ public class Card : ScriptableObject {
     public int range;
     public int damage;
 
+    [SerializeField]
+    CombatState state;
+
+    [SerializeField]
+    TargetType targetType;
+
+    public CombatState GetState()
+    {
+        return state;
+    }
+
+    public TargetType GetTargetType()
+    {
+        return targetType;
+    }
+
+    //[SerializeField]
+    //bool[] target = new bool[3];
+     //public bool[] GetTargets() { return target; }
     //Methods can be added
+
 }
